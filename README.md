@@ -20,22 +20,22 @@ sudo docker run -it -e MINIO_ACCESS_KEY=minio -e MINIO_SECRET_KEY=miniokey minio
 ```
 
 ### In another shell :
-#### Make scripts executable
+### Prerequisite 4 : Make scripts executable
 ```
 chmod +x initialize_server.sh poc.sh
 ```
 
-#### Launch initialization of the server
+### Prerequisite 5 : Launch initialization of the server
 ```
 ./initialize_server.sh
 ```
 
-#### To use script update_bucket :
+### To use the python file update_bucket (2 inputs) :
 Usage :
 python update_bucket.py file_path bucket_name
 
 
-#### To make a proof of concept
+### To make a proof of concept
 Launch the script poc.sh
   ```
   ./poc.sh
