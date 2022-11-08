@@ -26,7 +26,7 @@ else :
         if file_exists :
             local_file = open(file_path, 'rb')
             local_file.seek(0)
-            if file_exists_in_bucket : #the file in bucket needs to be updated if needed
+            if file_exists_in_bucket : #the file in bucket needs to be updated if diferent from the local file
                 temp_data = io.BytesIO()
                 s3.Bucket(bucket_name).download_fileobj(file_path, temp_data)
                 temp_data.seek(0)
